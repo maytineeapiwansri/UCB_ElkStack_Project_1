@@ -5,7 +5,7 @@ This is my repository for the Elk Stack Project 1.
 
 The files in this repository were used to configure the network depicted below.
 
-UCB_ElkStack_Project_1/Diagrams/HW_12_Cloud_Network_Diagram-Elk Stack Diagram.png
+!(Diagrams/HW_12_Cloud_Network_Diagram-Elk Stack Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yml and config** file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -45,7 +45,6 @@ Filebeat tracks the log files and the location specified, gathers log events, as
 Metricbeat utilizes the metrics that is collected and transferrs them to the output specified, i.e. Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name          | Function      | IP Address                | Operating System  |
 |---------------|---------------|---------------------------|-------------------|
@@ -89,7 +88,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-UCB_ElkStack_Project_1/Diagrams/docker_ps.png
+!(Diagrams/docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
