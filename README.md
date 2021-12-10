@@ -5,7 +5,7 @@ This is my repository for the Elk Stack Project 1.
 
 The files in this repository were used to configure the network depicted below.
 
-!(Diagrams/HW_12_Cloud_Network_Diagram-Elk Stack Diagram.png)
+https://github.com/maytineeapiwansri/UCB_ElkStack_Project_1/blob/main/Diagrams/HW_12_Cloud_Network_Diagram-Elk%20Stack%20Diagram.drawio.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yml and config** file may be used to install only certain pieces of it, such as Filebeat.
 
