@@ -29,7 +29,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly highly, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly **available**, in addition to restricting **access** to the network.
 
 - What aspect of security do load balancers protect?
 The aspect of security which load balancers protect is against the denial-of-service (DDoS) attacks due to transferring the attack traffic to the public cloud provider. 
@@ -37,7 +37,7 @@ The aspect of security which load balancers protect is against the denial-of-ser
 - What is the advantage of a jump box?
 The advantage of a jump box is that the jump box has full control of the vulnerable host access as well as automation.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **data** and system **logs**.
 - What does Filebeat watch for?
 Filebeat tracks the log files and the location specified, gathers log events, as well as forwards them to the Elasticsearch or the Logstach.
 
@@ -58,10 +58,10 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Elk Stack machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the **Elk Stack** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - Workstation Public IP via TCP port 5601
 
-Machines within the network can only be accessed by the JumpBox and the Workstation IP address.
+Machines within the network can only be accessed by the **JumpBox and the Workstation IP address**.
 - Which machine did you allow to access your ELK VM? What was its IP address?
 - JumpBox IP address: 10.0.0.4 via the SSH (port 22)
 - Workstation Public IP address via the TCP port 5601
@@ -106,11 +106,11 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Ansible playbook.yml file to /etc/files.
-- Update the /etc/ansible/hosts file to include the virtual machines running the playbook.
-- Run the playbook, and navigate to http://<public_IP_address_of_elk_server>:5601/app/kibana to check that the installation worked as expected.
+- Copy the **Ansible playbook.yml** file to** /etc/files**.
+- Update the **/etc/ansible/hosts** file to include the **virtual machines** running the playbook.
+- Run the playbook, and navigate to **http://<public_IP_address_of_elk_server>:5601/app/kibana** to check that the installation worked as expected.
 
-For Filebeat:
+### **For Filebeat:**
 - Download Filebeat configuration files using this command:
   - curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/files/filebeat-config.yml
 - Copy the '/etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml'
@@ -124,7 +124,7 @@ For Filebeat:
 - Then Kibana > Logs : Add log data > System logs > Module Status to check that the installation worked as expected
 
 
-For Metricbeat:
+### **For Metricbeat:**
 - Download Metricbeat configuration files using this command:
   - curl -L -O https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml
 - Copy the '/etc/ansible/files/metricbeat' file to '/etc/metricbeat/metricbeat-playbook.yml'
