@@ -32,17 +32,17 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly **available**, in addition to restricting **access** to the network.
 
 - What aspect of security do load balancers protect?
-- The aspect of security which load balancers protect is against the denial-of-service (DDoS) attacks due to transferring the attack traffic to the public cloud provider. 
+  - The aspect of security which load balancers protect is against the denial-of-service (DDoS) attacks due to transferring the attack traffic to the public cloud provider. 
 
 - What is the advantage of a jump box?
-- The advantage of a jump box is that the jump box has full control of the vulnerable host access as well as automation.
+  - The advantage of a jump box is that the jump box has full control of the vulnerable host access as well as automation.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the **data** and system **logs**.
 - What does Filebeat watch for?
-- Filebeat tracks the log files and the location specified, gathers log events, as well as forwards them to the Elasticsearch or the Logstach.
+  - Filebeat tracks the log files and the location specified, gathers log events, as well as forwards them to the Elasticsearch or the Logstach.
 
 - What does Metricbeat record?
-- Metricbeat utilizes the metrics that is collected and transferrs them to the output specified, i.e. Elasticsearch or Logstash.
+  - Metricbeat utilizes the metrics that is collected and transferrs them to the output specified, i.e. Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 
@@ -63,8 +63,8 @@ Only the **Elk Stack** machine can accept connections from the Internet. Access 
 
 Machines within the network can only be accessed by the **JumpBox and the Workstation IP address**.
 - Which machine did you allow to access your ELK VM? What was its IP address?
-- JumpBox IP address: 10.0.0.4 via the SSH (port 22)
-- Workstation Public IP address via the TCP port 5601
+  - JumpBox IP address: 10.0.0.4 via the SSH (port 22)
+  - Workstation Public IP address via the TCP port 5601
 
 A summary of the access policies in place can be found in the table below.
 
